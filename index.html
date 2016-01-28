@@ -145,18 +145,20 @@
                 <section data-background="images/accessibility-dark.jpg">
                     <div class="intro">
                         <h1 style="color:white">An Inclusive Web</h1>
-                        <h2>Heather Migliorisi</h2>
+                        <h2 style="color: white;">Heather Migliorisi</h2>
                     </div>
                     <aside class="notes">
                         <p>Hi.</p>
-                        <p>My name is Heather Migliorisi and I used to be the Senior UI Developer for GiftCards.com.</p>
+                        <p>My name is Heather Migliorisi and I am the former Senior UI Developer for GiftCards.com.</p>
                         <p>I've been working on making our site accessible for the last year and a half.</p>
                         <p>We have a ways to go, but one release after next, we are getting there.</p>
-                        <p>So, what do I mean when I say accessibility?</p>
                     </aside>
                 </section>
                 <section>
                     <h1 class="no-shadow">What is (Web) Accessibility?</h1>
+                    <aside class="notes">
+                        <p>So, what do I mean when I say accessibility?</p>
+                    </aside>
                 </section>
                 <section data-background="images/what-is-accessibility3.jpg">
                     <section>
@@ -204,7 +206,7 @@
                     <section class="fragment">
                         <h3>Money/Legal - Work With the Government</h3>
                         <img src="images/dot-gov.png" style="width:60%;">
-                        <p>Businesses must comply with Section 508 when supplying Electronic and Information Technology <strong>goods and services to the federal government</strong>. - <a href="http://webaim.org/articles/laws/usa/rehab" target="_blank">source webaim.org</a></p>
+                        <!--<p>Businesses must comply with Section 508 when supplying Electronic and Information Technology <strong>goods and services to the federal government</strong>. - <a href="http://webaim.org/articles/laws/usa/rehab" target="_blank">source webaim.org</a></p>-->
                         <aside class="notes">
                             <p>Also - Businesses must comply with Section 508 when supplying Electronic and Information Technology <strong>goods and services to the federal government</strong>.  </p>
                         </aside>
@@ -230,7 +232,7 @@
                         <div ><img src="images/woman-with-stroller-elevator.jpg" style="width: 40%;"></div>
                         <aside class="notes">
                             <p>How many people do you see using ramps and elevators that are not disabled?</p>
-                            <p>All of these folks are able to benefit from the features added for people labeled with having disabilities.</p>
+                            <p>All of these folks are able to benefit from the considerations taken for people labeled with having disabilities.</p>
                         </aside>
                     </section>
                     <section class="fragment">
@@ -332,7 +334,7 @@
                     <section class="fragment fade-in">
                         <h3>Blindness: substantial, uncorrectable loss of vision in both eyes</h3>
                         <div>
-                            <a href="video/blind-using-iphone.m4v" target="_blank"><img src="images/blind/blind.jpg" ></a>
+                            <img src="images/blind/blind.jpg" >
                             <br>
                             <small><a href="https://www.youtube.com/watch?v=c0nvdiRdehw" target="_blank">Video: https://www.youtube.com/watch?v=c0nvdiRdehw</a></small>
                             <aside class="notes">
@@ -361,7 +363,7 @@
                 </section>
                 <section>
                     <section>
-                        <a href="video/mouth-stick.m4v" target="_blank"><img src="images/physical3.png" style="width:55%;" alt="image of a woman without arms using a mouthstick to type on a keyboard"></a>
+                        <img src="images/physical3.png" style="width:55%;" alt="image of a woman without arms using a mouthstick to type on a keyboard">
                         <br>
                         <small>
                             <a href="https://www.youtube.com/watch?v=4gVloz3FY2g" target="_blank">Video</a>
@@ -447,7 +449,7 @@
                     <section class="fragment fade-in" data-background="images/broken-hand-2.jpg">
                         <h1 class="why" style="margin-left: -1em;width: 120%;">Temporarily Disabled</h1>
                         <aside class="notes">
-                            <p>Not accounted for in the census data are things like...</p>
+                            <!--<p>Not accounted for in the census data are things like...</p>-->
                             <p>Temporary disabilities, like a broken arm.</p>
                             <p>---NEXT SLIDE---</p>
                         </aside>
@@ -698,8 +700,7 @@
                     </div>
                     <aside class="notes">
                         <p>ARIA - Accessible Rich Internet Applications -  </p>
-                        <p>This standard allows developers to set roles, states and properties on html elements </p>
-                        <p>defines methods to make Web content and Web applications more accessible to people using assistive technology</p>
+                        <p>This standard allows developers to set roles, states and properties on html elements making them more accessible to people using assistive technology </p>
                     </aside>
                 </section>
                 <section>
@@ -716,17 +717,13 @@
                     </section>
                     <section class="fragment fade-in" data-background="images/belt-braces.png">
                         <h2 class="why" style="width: 111%;margin-left: -.8em;padding: 1em 20px !important;">"ARIA roles add nothing to default semantics of most elements" - Steve Faulkner</h2>
-                        <small style="margin-top: 6em;">from <a href="http://html5doctor.com/on-html-belts-and-aria-braces/">On HTML belts and ARIA braces (The Default Implicit ARIA semantics they didn’t want you to know about)</a></small>
+                        <!--<small style="margin-top: 6em;">from <a href="http://html5doctor.com/on-html-belts-and-aria-braces/">On HTML belts and ARIA braces (The Default Implicit ARIA semantics they didn’t want you to know about)</a></small>-->
                     </section>
                     <section style="text-align: left;">
-                        <h3>Don't add default implicit roles to elements</h3>
+                        <h3>Don't add default implicit roles, states or properties to elements</h3>
                         <p class="fragment fade-in">&#10094;button <strike>role="button"</strike>&#10095; button text &#10094;/button&#10095;</p>
-                        <br>
-                        <h3 class="blue fragment fade-in">Don't add ARIA state or property attributes in addition to their native HTML counterparts</h3>
                         <p class="fragment fade-in">&#10094;input type="text" required <strike>aria-required="true"</strike>&#10095;</p>
                         <p class="fragment fade-in">&#10094;div hidden <strike>aria-hidden="true"</strike>&#10095;</p>
-                        <br>
-                        <h3 class="blue fragment fade-in">Don't add ARIA roles and states or properties to long-implemented structural elements</h3>
                         <p class="fragment fade-in">&#10094;h1 <strike>role="heading" aria-level="1"</strike>&#10095;heading text&#10094;/h1&#10095;</p>
                     </section>
                     <section>
@@ -780,8 +777,8 @@
                     </aside>
                 </section>
                 <section>
-                    <h2>W3C Validation</h2>
                     <section>
+                        <h2>W3C Validation</h2>
                         <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.cnn.com" target="_blank"><img src="images/cnn.png" style="width:80%;" ></a>
                         <br><small>Note -  <a href="https://www.paciellogroup.com/blog/2015/08/short-note-on-html-conformance-checking/" target="_blank">conformance checking</a></small>
                         <aside class="notes">
@@ -790,6 +787,7 @@
                         </aside>
                     </section>
                     <section>
+                        <h2>W3C Validation</h2>
                         <img src="images/cnn-w3c-check.png" style="width: 60%">
                         <br>
                         <small><a href="https://www.paciellogroup.com/blog/2015/08/short-note-on-html-conformance-checking/" target="_blank">Notes on conformance checking</a></small>
@@ -942,6 +940,7 @@
                     </section>
                     <section>
                         <h2>Unless ... <small>they are edited</small></h2>
+                        <p>-<a href="http://nomorecraptions.com/" target="_blank">NOMORECRAPTIONS</a> </p>
                         <a href="https://support.google.com/youtube/answer/6054623?hl=en" target="_blank"><img src="images/youtube-contrib.png" style="width:50%;" /></a>
                     </section>
                     <section>
@@ -1014,6 +1013,11 @@
                     </section>
                 </section>
                 <section>
+                    <h2>Diagrams, Charts & Data</h2>
+                    <img src="images/graph.png" style="width: 30%;">
+                    <p><a href="http://diagramcenter.org/table-of-contents-2.html" target="_blank">Diagram Center</a></p>
+                </section>
+                <section>
                     <section>
                         <h2>Off Screen Text for Icons</h2>
                         <p>HTML</p>
@@ -1032,6 +1036,9 @@
     }
     </code>
 </pre>
+                        <aside class="notes">
+                            <p>Icon fonts - overridden by open dyslexic</p>
+                        </aside>
                     </section>
                 </section>
                 <section>
@@ -1089,14 +1096,13 @@
                                 <li class="fragment fade-in">Make sure the text is large enough and has proper contrast.</li>
                                 <li class="fragment fade-in">Choose easy to read fonts.</li>
                                 <li class="fragment fade-in">Left align the text. It's easier to read.</li>
-                                <li class="fragment fade-in">Keep in mind that users may have a hard time with visual, math or reading comprehension.
                                 <li class="fragment fade-in">Use clear and simple written content.</li>
                             </ul>
                         </div>
                     </section>
                     <section>
                         <h3>Testing</h3>
-                        <a href="http://www.hemingwayapp.com/" target="_blank"><img src="images/hemingway-app.png" style="width: 100%;"></a>
+                        <a href="http://www.hemingwayapp.com/" target="_blank"><img src="images/hemingway-app.png" style="width: 80%;"></a>
                         <aside class="notes">
                             <p>Use the hemingway app to test the site's written content</p>
                         </aside>
@@ -1130,7 +1136,7 @@
                     <h3>Forms</h3>
                     <ul style="width: 90%;">
                         <li class="fragment fade-in">DO NOT use positive <code>tabindex="1"</code></li>
-                        <li class="fragment fade-in">Label everything and link the label to the input</li>
+                        <li class="fragment fade-in">Label the inputs and link the label to the input</li>
 <pre class="fragment fade-in">
 <code>
     <label for="email">Email Address</label>
@@ -1149,6 +1155,10 @@
                         <li class="fragment fade-in">Put the label/input group in a li tag and put all of these groupings in a list. </li>
                         <li class="fragment fade-in">Check out: <a href="http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-an-event-apart-dc-2015" target="_blank">Falling in Love With Forms</a> by Aaron Gustafson</li>
                     </ul>
+                    <aside class="notes">
+                        <p>-------at the end------</p>
+                        <p>errors in labels and hide them until needed</p>
+                    </aside>
                 </section>
                 <section>
                     <section data-background="images/vo.jpg">
@@ -1194,7 +1204,7 @@
                 </section>
                 <section>
                     <section>
-                        <h2>Step 11: Record/Document the Audits</h2>
+                        <h2>Step 11: Document the Audit</h2>
                     </section>
                     <section>
                         <p>Make note of pages you audit:</p>
@@ -1222,6 +1232,7 @@
                             <ul>
                                 <li>Explanation</li>
                                 <li>Samples</li>
+                                <li>WRITE code that relies on accessibilty features (e.g. alert styles must contain role="alert" .alert[role=alert])</li>
                             </ul>
                         </aside>
                     </section>
@@ -1252,7 +1263,7 @@
                 <section>
                     <section>
                         <h2>pa11y <small>http://pa11y.org/</small></h2>
-                        <a href="http://pa11y.org/" target="_blank"><img src="images/dashboard.png" style="width: 70%;"></a>
+                        <a href="http://demo.pa11y.org/52382f31c0d6c9ac49000005" target="_blank"><img src="images/dashboard.png" style="width: 70%;"></a>
                     </section>
                 </section>
                 <section>
@@ -1291,7 +1302,7 @@
                 </section>
                 <section>
                     <h2>Progress is Better than Perfection</h2>
-                    <img src="images/perfect.png" style="width: 50%">
+                    <img src="images/perfection.jpg" style="width: 50%">
                 </section>
                 <section data-background="images/cat-yoda-2.jpg">
                     <h1 class="why" style="width: 120%; margin-left: -.7em;margin-top: 3em;">Patience <br><small>You Must Have</small></h1>
